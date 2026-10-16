@@ -1,0 +1,64 @@
+\kactlref{troubleshoot}
+\section{Xử lý sự cố \& Checklist}
+\raggedright
+\scriptsize
+
+\textbf{Trước khi nộp bài (Pre-submit):}
+\begin{itemize}[noitemsep,topsep=0pt,leftmargin=1.2em]
+	\item Tự viết thêm vài test case đơn giản nếu test ví dụ quá ít.
+	\item Thời gian chạy có sát giới hạn (TL) không? Nếu có, hãy sinh test max.
+	\item Bộ nhớ sử dụng có nằm trong giới hạn (ML) không?
+	\item Có biến/phép tính nào bị tràn số không? (chú ý \texttt{int} vs \texttt{long long}).
+	\item Kiểm tra chắc chắn đã chọn đúng file cần nộp.
+\end{itemize}
+
+\textbf{Sai kết quả (Wrong answer - WA):}
+\begin{itemize}[noitemsep,topsep=0pt,leftmargin=1.2em]
+	\item In code ra giấy! In thêm cả các biến debug để kiểm tra.
+	\item Đã reset/clear toàn bộ cấu trúc dữ liệu giữa các test case chưa?
+	\item Thuật toán có xử lý được toàn bộ miền giá trị của input không?
+	\item Đọc lại đề bài một lần nữa (chú ý các chi tiết nhỏ).
+	\item Đã xử lý hết tất cả các trường hợp biên (corner cases) chưa?
+	\item Bạn đã thực sự hiểu đúng yêu cầu của bài toán chưa?
+	\item Có biến nào chưa được khởi tạo giá trị ban đầu không?
+	\item Có phép tính nào bị tràn số không? (nhân 2 số \texttt{int}, cộng dồn).
+	\item Có nhầm lẫn giữa $N$ và $M$, $i$ và $j$, $u$ và $v$ không?
+	\item Bạn có chắc chắn thuật toán của mình đúng không?
+	\item Còn trường hợp đặc biệt nào chưa nghĩ tới? ($N=0, 1$, âm, lẻ loi...).
+	\item Các hàm STL bạn dùng có hoạt động đúng như bạn nghĩ không?
+	\item Thêm các lệnh \texttt{assert}, có thể nộp lại để kiểm tra giả thuyết.
+	\item Tự tạo test nhỏ và chạy từng bước bằng tay trên giấy.
+	\item Giải thích thuật toán cho đồng đội nghe hoặc nhờ đồng đội soi code.
+	\item Đứng dậy đi dạo một vòng ngắn (đi vệ sinh, rửa mặt).
+	\item Định dạng in kết quả có đúng chưa? (khoảng trắng, xuống dòng).
+	\item Viết lại bài từ đầu hoặc để đồng đội làm hướng tiếp cận khác.
+\end{itemize}
+
+\textbf{Lỗi thực thi (Runtime error - RTE):}
+\begin{itemize}[noitemsep,topsep=0pt,leftmargin=1.2em]
+	\item Đã test các trường hợp biên ở máy cục bộ chưa?
+	\item Có biến nào chưa khởi tạo không?
+	\item Có đọc/ghi tràn chỉ số mảng hoặc vector không? (out-of-bounds).
+	\item Có lệnh \texttt{assert} nào bị fail không?
+	\item Có phép chia cho 0 hoặc chia lấy dư mod 0 không?
+	\item Đệ quy quá sâu gây tràn ngăn xếp (Stack Overflow)?
+	\item Con trỏ hoặc iterator bị vô hiệu hóa (invalidated)?
+	\item Sử dụng quá nhiều bộ nhớ dẫn đến không thể cấp phát?
+	\item Debug bằng cách nộp lại (dùng remap signal, xem chương Thủ thuật).
+\end{itemize}
+
+\textbf{Quá thời gian (Time limit exceeded - TLE):}
+\begin{itemize}[noitemsep,topsep=0pt,leftmargin=1.2em]
+	\item Có vòng lặp vô tận nào không?
+	\item Độ phức tạp lý thuyết của thuật toán là bao nhiêu?
+	\item Có copy cấu trúc dữ liệu không cần thiết? (thiếu tham chiếu \texttt{\&}).
+	\item Kích thước input/output lớn cỡ nào? (dùng fast I/O).
+	\item Tránh dùng \texttt{std::map}, \texttt{std::set} nếu không cần (dùng mảng, \texttt{unordered\_map}).
+	\item Đồng đội nghĩ gì về thuật toán? Có cách tối ưu hơn không?
+\end{itemize}
+
+\textbf{Tràn bộ nhớ (Memory limit exceeded - MLE):}
+\begin{itemize}[noitemsep,topsep=0pt,leftmargin=1.2em]
+	\item Thuật toán cần tối đa bao nhiêu bộ nhớ?
+	\item Đã giải phóng hoặc clear cấu trúc dữ liệu giữa các test case chưa?
+\end{itemize}
