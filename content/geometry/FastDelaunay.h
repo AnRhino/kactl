@@ -3,12 +3,9 @@
  * Date: 2016
  * License: MIT
  * Source: https://github.com/Bathlamos/delaunay-triangulation/
- * Description: Fast Delaunay triangulation.
- * Each circumcircle contains none of the input points.
- * There must be no duplicate points.
- * If all points are on a line, no triangles will be returned.
- * Should work for doubles as well, though there may be precision issues in 'circ'.
- * Returns triangles in order \{t[0][0], t[0][1], t[0][2], t[1][0], \dots\}, all counter-clockwise.
+ * Description: Tam giác hóa Delaunay nhanh cho tập điểm trong mặt phẳng.
+
+
  * Time: O(n \log n)
  * Status: stress-tested
  */

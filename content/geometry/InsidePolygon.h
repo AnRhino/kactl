@@ -3,9 +3,9 @@
  * Date: 2019-04-26
  * License: CC0
  * Source: https://vlecomte.github.io/cp-geo.pdf
- * Description: Returns true if p lies within the polygon. If strict is true,
- * it returns false for points on the boundary. The algorithm uses
- * products in intermediate steps so watch out for overflow.
+ * Description: Kiểm tra điểm p nằm trong, nằm ngoài hay trên cạnh của một đa giác bất kỳ.
+
+
  * Time: O(n)
  * Usage:
  * vector<P> v = {P{4,4}, P{1,2}, P{2,1}};

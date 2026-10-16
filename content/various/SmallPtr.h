@@ -3,7 +3,9 @@
  * Date: 2016-08-23
  * License: CC0
  * Source: me
- * Description: A 32-bit pointer that points into BumpAllocator memory.
+ * Description: Con trỏ 32-bit tiết kiệm bộ nhớ trên hệ thống 64-bit.
+
+
  * Status: tested
  */
 #pragma once

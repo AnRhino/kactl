@@ -3,7 +3,9 @@
  * Date: 2016-07-23
  * License: CC0
  * Source: me
- * Description: BumpAllocator for STL containers.
+ * Description: Bộ cấp phát BumpAllocator tương thích với các container chuẩn STL.
+
+
  * Usage: vector<vector<int, small<int>>> ed(N);
  * Status: tested
  */

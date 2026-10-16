@@ -3,9 +3,10 @@
  * Date: 2019-12-28
  * License: CC0
  * Source: https://github.com/hoke-t/tamu-kactl/blob/master/content/data-structures/MoQueries.h
- * Description: Answer interval or tree path queries by finding an approximate TSP through the queries,
- * and moving from one query to the next by adding/removing points at the ends.
- * If values are on tree edges, change \texttt{step} to add/remove the edge $(a, c)$ and remove the initial \texttt{add} call (but keep \texttt{in}).
+ * Description: Thuật toán Mo trả lời truy vấn đoạn hoặc đường đi trên cây offline. Sắp xếp các truy vấn theo thứ tự tối ưu và dịch chuyển 2 con trỏ L, R. Nếu trọng số nằm trên cạnh cây, sửa \texttt{step} để thêm/bớt cạnh $(a, c)$.
+
+
+
  * Time: O(N \sqrt Q)
  * Status: stress-tested
  */

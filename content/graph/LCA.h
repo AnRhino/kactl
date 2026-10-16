@@ -3,9 +3,9 @@
  * Date: 2020-02-20
  * License: CC0
  * Source: Folklore
- * Description: Data structure for computing lowest common ancestors in a tree
- * (with 0 as root). C should be an adjacency list of the tree, either directed
- * or undirected.
+ * Description: Tìm tổ tiên chung gần nhất (LCA) của hai đỉnh u, v trên cây trong $O(1)$ sau khi tiền xử lý RMQ $O(N \log N)$.
+
+
  * Time: $O(N \log N + Q)$
  * Status: stress-tested
  */

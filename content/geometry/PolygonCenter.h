@@ -3,7 +3,9 @@
  * Date: 2009-04-08
  * License: CC0
  * Source:
- * Description: Returns the center of mass for a polygon.
+ * Description: Tìm trọng tâm (center of mass) của một đa giác đều hoặc đa giác bất kỳ.
+
+
  * Time: O(n)
  * Status: Tested
  */

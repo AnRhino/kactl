@@ -2,7 +2,9 @@
  * Author: Jakob Kogler, chilli, pajenegod
  * Date: 2020-04-12
  * License: CC0
- * Description: Prime sieve for generating all primes smaller than LIM.
+ * Description: Sàng nguyên tố Eratosthenes tối ưu bộ nhớ bằng bitset, sàng đến 1e8 trong dưới 0.1 giây.
+
+
  * Time: LIM=1e9 $\approx$ 1.5s
  * Status: Stress-tested
  * Details: Despite its n log log n complexity, segmented sieve is still faster

@@ -2,10 +2,9 @@
  * Author: Stanford
  * Source: Stanford Notebook
  * License: MIT
- * Description: Solves a general linear maximization problem: maximize $c^T x$ subject to $Ax \le b$, $x \ge 0$.
- * Returns -inf if there is no solution, inf if there are arbitrarily good solutions, or the maximum value of $c^T x$ otherwise.
- * The input vector is set to an optimal $x$ (or in the unbounded case, an arbitrary solution fulfilling the constraints).
- * Numerical stability is not guaranteed. For better performance, define variables such that $x = 0$ is viable.
+ * Description: Thuật toán Simplex giải bài toán quy hoạch tuyến tính dạng tổng quát.
+
+
  * Usage:
  * vvd A = {{1,-1}, {-1,1}, {-1,-2}};
  * vd b = {1,1,-4}, c = {-1,-1}, x;

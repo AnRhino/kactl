@@ -2,8 +2,9 @@
  * Author: chilli
  * License: CC0
  * Source: Own work
- * Description: Read an integer from stdin. Usage requires your program to pipe in
- * input from file.
+ * Description: Đọc dữ liệu siêu nhanh từ stdin bằng getchar\_unlocked hoặc mmap.
+
+
  * Usage: ./a.out < input.txt
  * Time: About 5x as fast as cin/scanf.
  * Status: tested on SPOJ INTEST, unit tested

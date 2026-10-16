@@ -2,9 +2,10 @@
  * Author: someone on Codeforces
  * Date: 2017-03-14
  * Source: folklore
- * Description: A short self-balancing tree. It acts as a
- *  sequential container with log-time splits/joins, and
- *  is easy to augment with additional data.
+ * Description: Cây Treap tự cân bằng ngắn gọn (Implicit Treap). Đóng vai trò như container dãy số hỗ trợ tách/ghép trong thời gian logarit và dễ mở rộng thông tin trên đoạn.
+
+
+
  * Time: $O(\log N)$
  * Status: stress-tested
  */

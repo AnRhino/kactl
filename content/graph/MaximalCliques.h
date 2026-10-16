@@ -3,9 +3,9 @@
  * Date: 2018-07-18
  * License: CC0
  * Source: https://en.wikipedia.org/wiki/Bron%E2%80%93Kerbosch_algorithm
- * Description: Runs a callback for all maximal cliques in a graph (given as a
- * symmetric bitset matrix; self-edges not allowed). Callback is given a bitset
- * representing the maximal clique.
+ * Description: Thuật toán Bron-Kerbosch tìm tất cả các clique cực đại trong đồ thị vô hướng.
+
+
  * Time: O(3^{n/3}), much faster for sparse graphs
  * Status: stress-tested
  */

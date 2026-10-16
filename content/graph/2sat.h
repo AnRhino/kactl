@@ -3,10 +3,10 @@
  * Date: 2011-11-29
  * License: CC0
  * Source: folklore
- * Description: Calculates a valid assignment to boolean variables a, b, c,... to a 2-SAT problem,
- * so that an expression of the type $(a||b)\&\&(!a||c)\&\&(d||!b)\&\&...$
- * becomes true, or reports that it is unsatisfiable.
- * Negated variables are represented by bit-inversions (\texttt{\tilde{}x}).
+ * Description: Giải bài toán 2-SAT tìm phép gán chân trị thỏa mãn hệ mệnh đề logic. Trả về true nếu có nghiệm.
+
+
+
  * Usage:
  *  TwoSat ts(number of boolean variables);
  *  ts.either(0, \tilde3); // Var 0 is true or var 3 is false

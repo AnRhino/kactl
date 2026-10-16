@@ -3,9 +3,11 @@
  * Date: 2017-04-20
  * License: CC0
  * Source: own work
- * Description: Container where you can add lines of the form kx+m, and query maximum values at points x.
- *  Useful for dynamic programming (``convex hull trick'').
- * Time: O(\log N)
+ * Description: Cấu trúc thêm các đường thẳng dạng kx+m và truy vấn giá trị lớn nhất tại điểm x. Rất hữu ích cho quy hoạch động (Convex Hull Trick dạng động).
+
+
+
+ * Time: $O(\log N)$
  * Status: stress-tested
  */
 #pragma once

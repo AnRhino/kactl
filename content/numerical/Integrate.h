@@ -3,10 +3,9 @@
  * Date: 2015-02-11
  * License: CC0
  * Source: Wikipedia
- * Description: Simple integration of a function over an interval using
- *  Simpson's rule. The error should be proportional to $h^4$, although in
- *  practice you will want to verify that the result is stable to desired
- *  precision when epsilon changes.
+ * Description: Tích phân số bằng phương pháp Simpson.
+
+
  * Status: mostly untested
  */
 #pragma once

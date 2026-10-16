@@ -167,7 +167,8 @@
     \string^%
   \endgroup
 }
-\renewcommand*{\tilde}{\raise.17ex\hbox{$\scriptstyle\mathtt{\sim}$}}
+\newcommand*{\kactltilde}{\raise.17ex\hbox{$\scriptstyle\mathtt{\sim}$}}
+\AtBeginDocument{\def\tilde{\kactltilde}}
 
 % Fatter {} which are more distinguishable from ()
 % Makes pdf compile time 5-10% slower, but probably worth it still?
@@ -201,7 +202,7 @@
 \lstset{breaklines=true}
 \lstset{basicstyle=\footnotesize\ttfamily}
 \lstset{commentstyle=\normalfont\itshape}
-\lstset{literate={^}{\caret}{1} {~}{\tilde}{1} {\{}{\nicelbrace}{1} {\}}{\nicerbrace}{1}}
+\lstset{literate={^}{\caret}{1} {~}{\kactltilde}{1} {\{}{\nicelbrace}{1} {\}}{\nicerbrace}{1}}
 \lstset{emptylines=*1}
 \lstset{inputencoding=utf8}
 \lstset{aboveskip=3pt}
@@ -213,7 +214,9 @@
 \setlength{\columnsep}{10pt} % Multicol separation margin
 \setcounter{tocdepth}{1} % Table of contents depth
 
+\ifx\pdfsuppresswarningpagegroup\undefined\else
 \pdfsuppresswarningpagegroup=1
+\fi
 
 \newcommand{\maketeampage}{
 	\pagestyle{empty}

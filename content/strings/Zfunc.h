@@ -1,8 +1,9 @@
 /**
  * Author: chilli
  * License: CC0
- * Description: z[i] computes the length of the longest common prefix of s[i:] and s,
- * except z[0] = 0. (abacaba -> 0010301)
+ * Description: Hàm Z-algorithm tính độ dài tiền tố chung dài nhất giữa chuỗi s và các hậu tố của nó.
+
+
  * Time: O(n)
  * Status: stress-tested
  */

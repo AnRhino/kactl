@@ -3,10 +3,11 @@
  * Date: 2016-03-22
  * License: CC0
  * Source: hacKIT, NWERC 2015
- * Description: A set (not multiset!) with support for finding the n'th
- * element, and finding the index of an element.
- * To get a map, change \texttt{null\_type}.
- * Time: O(\log N)
+ * Description: Cấu trúc set (không phải multiset) hỗ trợ tìm phần tử thứ k (theo thứ tự sắp xếp) và tìm số lượng phần tử nhỏ hơn một khóa cho trước. Đổi \texttt{null\_type} để dùng như map.
+
+
+
+ * Time: $O(\log N)$
  */
 #pragma once
 

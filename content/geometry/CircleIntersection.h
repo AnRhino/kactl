@@ -2,8 +2,9 @@
  * Author: Simon Lindholm
  * Date: 2015-09-01
  * License: CC0
- * Description: Computes the pair of points at which two circles intersect.
- * Returns false in case of no intersection.
+ * Description: Tìm các giao điểm giữa hai đường tròn.
+
+
  * Status: stress-tested
  */
 #pragma once

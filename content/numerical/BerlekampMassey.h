@@ -3,11 +3,9 @@
  * Date: 2017-10-31
  * License: CC0
  * Source: Wikipedia
- * Description: Recovers any $n$-order linear recurrence relation from the first
- * $2n$ terms of the recurrence.
- * Useful for guessing linear recurrences after brute-forcing the first terms.
- * Should work on any field, but numerical stability for floats is not guaranteed.
- * Output will have size $\le n$.
+ * Description: Thuật toán Berlekamp-Massey tìm hệ thức truy hồi tuyến tính ngắn nhất sinh ra dãy số cho trước.
+
+
  * Usage: berlekampMassey({0, 1, 1, 3, 5, 11}) // {1, 2}
  * Time: O(N^2)
  * Status: bruteforce-tested mod 5 for n <= 5 and all s

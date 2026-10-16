@@ -3,7 +3,9 @@
  * Date: 2019-04-17
  * License: CC0
  * Source: https://codeforces.com/blog/entry/58747
- * Description: Finds the closest pair of points.
+ * Description: Thuật toán chia để trị tìm cặp điểm gần nhau nhất trong tập N điểm trong $O(N \log N)$.
+
+
  * Time: O(n \log n)
  * Status: stress-tested
  */

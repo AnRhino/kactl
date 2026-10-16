@@ -1,7 +1,9 @@
 /**
  * Author: Johan Sannemo
  * License: CC0
- * Description: Compute indices for the longest increasing subsequence.
+ * Description: Tìm dãy con tăng dài nhất (Longest Increasing Subsequence) trong $O(N \log N)$.
+
+
  * Time: $O(N \log N)$
  * Status: Tested on kattis:longincsubseq, stress-tested
  */

@@ -3,8 +3,10 @@
  * Date: 2019-12-26
  * License: CC0
  * Source: folklore
- * Description: Disjoint-set data structure with undo.
- * If undo is not needed, skip st, time() and rollback().
+ * Description: Cấu trúc DSU hỗ trợ hoàn tác (undo/rollback). Nếu không cần hoàn tác, có thể bỏ qua mảng st, hàm time() và rollback().
+
+
+
  * Usage: int t = uf.time(); ...; uf.rollback(t);
  * Time: $O(\log(N))$
  * Status: tested as part of DirectedMST.h

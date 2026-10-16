@@ -3,8 +3,9 @@
  * Date: 2019-10-31
  * License: CC0
  * Source: https://github.com/spaghetti-source/algorithm/blob/master/geometry/_geom.cc#L744
- * Description: Returns the area of the intersection of a circle with a
- * ccw polygon.
+ * Description: Tính diện tích phần giao nhau giữa hình tròn và một đa giác bất kỳ.
+
+
  * Time: O(n)
  * Status: Tested on GNYR 2019 Gerrymandering, stress-tested
  */

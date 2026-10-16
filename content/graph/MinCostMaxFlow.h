@@ -2,9 +2,10 @@
  * Author: Stanford
  * Date: Unknown
  * Source: Stanford Notebook
- * Description: Min-cost max-flow.
- *  If costs can be negative, call setpi before maxflow, but note that negative cost cycles are not supported.
- *  To obtain the actual flow, look at positive values only.
+ * Description: Tìm luồng cực đại với chi phí nhỏ nhất (MCMF). Đồ thị có thể có chu trình âm (nhưng không được có chu trình âm với khả năng thông qua dương).
+
+
+
  * Status: Tested on kattis:mincostmaxflow, stress-tested against another implementation
  * Time: $O(F E \log(V))$ where F is max flow. $O(VE)$ for setpi.
  */

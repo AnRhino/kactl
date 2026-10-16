@@ -3,11 +3,10 @@
  * Date: 2009-10-28
  * License: CC0
  * Source:
- * Description: Simple bipartite matching algorithm. Graph $g$ should be a list
- * of neighbors of the left partition, and $btoa$ should be a vector full of
- * -1's of the same size as the right partition. Returns the size of
- * the matching. $btoa[i]$ will be the match for vertex $i$ on the right side,
- * or $-1$ if it's not matched.
+ * Description: Tìm cặp ghép cực đại trên đồ thị hai phía bằng DFS tăng luồng đơn giản, nhanh và code ngắn cho đồ thị nhỏ.
+
+
+
  * Time: O(VE)
  * Usage: vi btoa(m, -1); dfsMatching(g, btoa);
  * Status: works

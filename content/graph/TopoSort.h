@@ -2,10 +2,10 @@
  * Author: Unknown
  * Date: 2002-09-13
  * Source: predates tinyKACTL
- * Description: Topological sorting. Given is an oriented graph.
- * Output is an ordering of vertices, such that there are edges only from left to right.
- * If there are cycles, the returned list will have size smaller than $n$ -- nodes reachable
- * from cycles will not be returned.
+ * Description: Sắp xếp tô-pô (Topological Sort) đồ thị có hướng không chu trình (DAG). Trả về dãy rỗng nếu đồ thị chứa chu trình.
+
+
+
  * Time: $O(|V|+|E|)$
  * Status: stress-tested
  */

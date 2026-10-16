@@ -2,9 +2,10 @@
  * Author: Johan Sannemo, Simon Lindholm
  * Date: 2016-12-15
  * License: CC0
- * Description: Finds a minimum vertex cover in a bipartite graph.
- *  The size is the same as the size of a maximum matching, and
- *  the complement is a maximum independent set.
+ * Description: Tìm tập phủ đỉnh nhỏ nhất (Minimum Vertex Cover) trên đồ thị hai phía từ kết quả cặp ghép cực đại (định lý König: |Max Matching| = |Min Vertex Cover|).
+
+
+
  * Status: stress-tested
  */
 #pragma once

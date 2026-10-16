@@ -4,7 +4,9 @@
  * License: CC0
  * Source: folklore
  * Description:
- * Status: tested
+ Lũy thừa nhanh tính $a^b \pmod m$.
+
+
  */
 #pragma once
 

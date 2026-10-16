@@ -3,8 +3,9 @@
  * Date: 2009-04-14
  * License: CC0
  * Source:
- * Description: Class to handle points in 3D space.
- * 	T can be e.g. double or long long.
+ * Description: Cấu trúc điểm và vector trong không gian 3 chiều.
+
+
  * Usage:
  * Status: tested, except for phi and theta
  */

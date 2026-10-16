@@ -3,9 +3,10 @@
  * Date: 2015-02-23
  * License: CC0
  * Source: http://en.wikipedia.org/wiki/Bellman-Ford_algorithm
- * Description: Calculates shortest paths from $s$ in a graph that might have negative edge weights.
- * Unreachable nodes get dist = inf; nodes reachable through negative-weight cycles get dist = -inf.
- * Assumes $V^2 \max |w_i| < \tilde{} 2^{63}$.
+ * Description: Tìm đường đi ngắn nhất từ đỉnh nguồn s trên đồ thị có thể có trọng số âm. Trả về mảng khoảng cách d và danh sách đỉnh thuộc chu trình âm (nếu có).
+
+
+
  * Time: O(VE)
  * Status: Tested on kattis:shortestpath3
  */

@@ -3,7 +3,10 @@
  * Date: 2014-11-28
  * License: CC0
  * Source: Folklore
- * Description: Calculate submatrix sums quickly, given upper-left and lower-right corners (half-open).
+ * Description: Mảng cộng dồn 2D (2D Prefix Sum) tính nhanh tổng ma trận con theo góc trên-trái và dưới-phải (nửa mở).
+
+
+
  * Usage:
  * SubMatrix<int> m(matrix);
  * m.sum(0, 0, 2, 2); // top left 4 elements

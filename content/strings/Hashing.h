@@ -3,7 +3,9 @@
  * Date: 2015-03-15
  * License: CC0
  * Source: own work
- * Description: Self-explanatory methods for string hashing.
+ * Description: Băm chuỗi số học tự động hỗ trợ tính mã hash của xâu con bất kỳ trong $O(1)$.
+
+
  * Status: stress-tested
  */
 #pragma once

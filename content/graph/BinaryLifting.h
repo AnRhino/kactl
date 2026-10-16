@@ -3,9 +3,9 @@
  * Date: 2015-02-06
  * License: CC0
  * Source: Folklore
- * Description: Calculate power of two jumps in a tree,
- * to support fast upward jumps and LCAs.
- * Assumes the root node points to itself.
+ * Description: Nhảy nhị phân (Binary Lifting) trên cây tính tổ tiên thứ $2^k$ để truy vấn hàm kết hợp trên đường đi trong $O(\log N)$.
+
+
  * Time: construction $O(N \log N)$, queries $O(\log N)$
  * Status: Tested at Petrozavodsk, also stress-tested via LCA.cpp
  */

@@ -3,7 +3,9 @@
  * Date: 2015-02-11
  * License: CC0
  * Source: Wikipedia
- * Description: Fast integration using an adaptive Simpson's rule.
+ * Description: Tích phân số thích nghi với độ chính xác cao.
+
+
  * Usage:
 	double sphereVolume = quad(-1, 1, [](double x) {
 	return quad(-1, 1, [\&](double y) {

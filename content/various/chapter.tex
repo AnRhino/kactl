@@ -1,41 +1,40 @@
-\chapter{Various}
+\chapter{Các thuật toán khác và Thủ thuật}
 
-\section{Intervals}
+\section{Xử lý đoạn (Intervals)}
 	\kactlimport{IntervalContainer.h}
 	\kactlimport{IntervalCover.h}
 	\kactlimport{ConstantIntervals.h}
 
-\section{Misc. algorithms}
+\section{Các thuật toán khác}
 	\kactlimport{TernarySearch.h}
 	\kactlimport{LIS.h}
 	\kactlimport{FastKnapsack.h}
 
-\section{Dynamic programming}
+\section{Quy hoạch động nâng cao}
 	\kactlimport{KnuthDP.h}
 	\kactlimport{DivideAndConquerDP.h}
 
-\section{Debugging tricks}
+\section{Mẹo gỡ lỗi (Debugging)}
 	\begin{itemize}
-		\item \verb@signal(SIGSEGV, [](int) { _Exit(0); });@ converts segfaults into Wrong Answers.
-			Similarly one can catch SIGABRT (assertion failures) and SIGFPE (zero divisions).
-			\verb@_GLIBCXX_DEBUG@ failures generate SIGABRT (or SIGSEGV on gcc 5.4.0 apparently).
-		\item \verb@feenableexcept(29);@ kills the program on NaNs (\texttt 1), 0-divs (\texttt 4), infinities (\texttt 8) and denormals (\texttt{16}).
+		\item \verb@signal(SIGSEGV, [](int) { _Exit(0); });@ chuyển Runtime Error (segfault) thành Wrong Answer.
+			Tương tự có thể bắt SIGABRT (assertion thất bại) và SIGFPE (chia cho 0).
+		\item \verb@feenableexcept(29);@ dừng chương trình ngay khi gặp NaN (\texttt 1), chia cho 0 (\texttt 4), vô cùng (\texttt 8) và denormals (\texttt{16}).
 	\end{itemize}
 
-\section{Optimization tricks}
-	\verb@__builtin_ia32_ldmxcsr(40896);@ disables denormals (which make floats 20x slower near their minimum value).
-	\subsection{Bit hacks}
+\section{Tối ưu tốc độ (Optimization)}
+	\verb@__builtin_ia32_ldmxcsr(40896);@ tắt denormals (nguyên nhân khiến số thực chậm gấp 20 lần khi gần về 0).
+	\subsection{Thao tác bit (Bit hacks)}
 		\begin{itemize}
-			\item \verb@x & -x@ is the least bit in \texttt{x}.
-			\item \verb@for (int x = m; x; ) { --x &= m; ... }@ loops over all subset masks of \texttt{m} (except \texttt{m} itself).
-			\item \verb@c = x&-x, r = x+c; (((r^x) >> 2)/c) | r@ is the next number after \texttt{x} with the same number of bits set.
-			\item \verb@rep(b,0,K) rep(i,0,(1 << K))@ \\ \verb@  if (i & 1 << b) D[i] += D[i^(1 << b)];@ computes all sums of subsets.
+			\item \verb@x & -x@ là bit 1 nhỏ nhất (bật thấp nhất) trong \texttt{x}.
+			\item \verb@for (int x = m; x; ) { --x &= m; ... }@ duyệt qua tất cả mặt nạ tập con của \texttt{m} (ngoại trừ chính \texttt{m}).
+			\item \verb@c = x&-x, r = x+c; (((r^x) >> 2)/c) | r@ tìm số tiếp theo lớn hơn \texttt{x} có cùng số lượng bit 1.
+			\item \verb@rep(b,0,K) rep(i,0,(1 << K))@ \\ \verb@  if (i & 1 << b) D[i] += D[i^(1 << b)];@ tính tổng trên mọi tập con (SOS DP).
 		\end{itemize}
-	\subsection{Pragmas}
+	\subsection{Chỉ thị Pragma}
 		\begin{itemize}
-			\item \lstinline{#pragma GCC optimize ("Ofast")} will make GCC auto-vectorize loops and optimizes floating points better.
-			\item \lstinline{#pragma GCC target ("avx2")} can double performance of vectorized code, but causes crashes on old machines.
-			\item \lstinline{#pragma GCC optimize ("trapv")} kills the program on integer overflows (but is really slow).
+			\item \lstinline{#pragma GCC optimize ("Ofast")} tự động vector hóa vòng lặp và tối ưu số thực.
+			\item \lstinline{#pragma GCC target ("avx2")} tăng gấp đôi hiệu năng nhờ vectorization hiện đại.
+			\item \lstinline{#pragma GCC optimize ("trapv")} dừng chương trình khi tràn số nguyên có dấu (chạy khá chậm).
 		\end{itemize}
 	\kactlimport{FastMod.h}
 	\kactlimport{FastInput.h}

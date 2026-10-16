@@ -1,7 +1,9 @@
 /**
  * Author: David Rydh, Per Austrin
  * Date: 2003-03-16
- * Description:
+ * Description:Cấu trúc đa thức với các phép toán cơ bản, đạo hàm, tích phân, chia đa thức.
+
+
  */
 #pragma once
 

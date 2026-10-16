@@ -3,8 +3,9 @@
  * Date: 2019-05-05
  * License: Boost Software License
  * Source: https://codeforces.com/blog/entry/48868
- * Description: Returns the two points with max distance on a convex hull (ccw,
- * no duplicate/collinear points).
+ * Description: Kỹ thuật Rotating Calipers tìm cặp điểm xa nhất (đường kính của bao lồi) trong $O(N)$.
+
+
  * Status: stress-tested, tested on kattis:roberthood
  * Time: O(n)
  */

@@ -3,7 +3,9 @@
  * Date: 2016-09-06
  * License: CC0
  * Source: me
- * Description: To get all uniquely determined values of $x$ back from SolveLinear, make the following changes:
+ * Description: Giải hệ phương trình tuyến tính qua ma trận vuông.
+
+
  * Status: tested on kattis:equationsolverplus, stress-tested
  */
 #pragma once

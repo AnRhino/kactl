@@ -3,7 +3,10 @@
  * Date: 2009-10-26
  * License: CC0
  * Source: folklore
- * Description: Disjoint-set data structure.
+ * Description: Cấu trúc các tập hợp rời nhau (Disjoint Set Union - DSU). Giúp hợp nhất các tập hợp và tìm đại diện của tập hợp chứa một phần tử.
+
+
+
  * Time: $O(\alpha(N))$
  */
 #pragma once

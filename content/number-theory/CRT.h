@@ -2,11 +2,9 @@
  * Author: Simon Lindholm
  * Date: 2019-05-22
  * License: CC0
- * Description: Chinese Remainder Theorem.
- *
- * \texttt{crt(a, m, b, n)} computes $x$ such that $x\equiv a \pmod m$, $x\equiv b \pmod n$.
- * If $|a| < m$ and $|b| < n$, $x$ will obey $0 \le x < \text{lcm}(m, n)$.
- * Assumes $mn < 2^{62}$.
+ * Description: Định lý phần dư Trung Hoa (Chinese Remainder Theorem) tìm nghiệm đồng dư chung của hệ $x \equiv a \pmod m$ và $x \equiv b \pmod n$.
+
+
  * Time: $\log(n)$
  * Status: Works
  */

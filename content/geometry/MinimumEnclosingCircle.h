@@ -3,7 +3,9 @@
  * Date: 2019-05-07
  * License: CC0
  * Source: folklore
- * Description: Computes the minimum circle that encloses a set of points.
+ * Description: Thuật toán Welzl tìm hình tròn bao nhỏ nhất chứa tập N điểm trong thời gian kỳ vọng O(N).
+
+
  * Time: expected O(n)
  * Status: stress-tested
  */

@@ -3,9 +3,10 @@
  * Date: 2018-07-23
  * License: CC0
  * Source: http://codeforces.com/blog/entry/60737
- * Description: Hash map with mostly the same API as unordered\_map, but \tilde
- * 3x faster. Uses 1.5x memory.
- * Initial capacity must be a power of 2 (if provided).
+ * Description: Bảng băm có API tương tự unordered\_map nhưng nhanh hơn khoảng 3 lần. Tốn gấp 1.5 lần bộ nhớ. Kích thước ban đầu phải là lũy thừa của 2 (nếu chỉ định).
+
+
+
  */
 #pragma once
 

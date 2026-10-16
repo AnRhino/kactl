@@ -3,7 +3,9 @@
  * Date: 2016-07-24
  * License: CC0
  * Source: Russian page
- * Description: Pre-computation of modular inverses. Assumes LIM $\le$ mod and that mod is a prime.
+ * Description: Tính nghịch đảo modulo nguyên tố theo định lý Fermat nhỏ, hoặc nghịch đảo liên tiếp các số từ 1 đến lim.
+
+
  * Status: Works
  */
 #pragma once

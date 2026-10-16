@@ -3,8 +3,10 @@
  * Date: 2017-05-11
  * License: CC0
  * Source: folklore
- * Description: Computes sums a[i,j] for all i<I, j<J, and increases single elements a[i,j].
- *  Requires that the elements to be updated are known in advance (call fakeUpdate() before init()).
+ * Description: Cây Fenwick 2D động tính tổng tiền tố a[i, j] cho i<I, j<J và cập nhật điểm. Yêu cầu biết trước các vị trí cập nhật (gọi fakeUpdate() trước khi init()).
+
+
+
  * Time: $O(\log^2 N)$. (Use persistent segment trees for $O(\log N)$.)
  * Status: stress-tested
  */

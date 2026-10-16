@@ -4,14 +4,9 @@
  * License: Unknown
  * Source: Suffix array - a powerful tool for dealing with strings
  * (Chinese IOI National team training paper, 2009)
- * Description: Builds suffix array for a string.
- * \texttt{sa[i]} is the starting index of the suffix which
- * is $i$'th in the sorted suffix array.
- * The returned vector is of size $n+1$, and \texttt{sa[0] = n}.
- * The \texttt{lcp} array contains longest common prefixes for
- * neighbouring strings in the suffix array:
- * \texttt{lcp[i] = lcp(sa[i], sa[i-1])}, \texttt{lcp[0] = 0}.
- * The input string must not contain any nul chars.
+ * Description: Xây dựng mảng hậu tố (Suffix Array) và mảng LCP của chuỗi s trong thời gian $O(N \log N)$.
+
+
  * Time: O(n \log n)
  * Status: stress-tested
  */

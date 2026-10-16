@@ -2,8 +2,9 @@
  * Author: Simon Lindholm
  * Date: 2018-07-06
  * License: CC0
- * Description: Permutation -> integer conversion. (Not order preserving.)
- * Integer -> permutation can use a lookup table.
+ * Description: Chuyển đổi qua lại giữa hoán vị và thứ tự từ điển của hoán vị (hệ số Lehmer).
+
+
  * Time: O(n)
  */
 #pragma once

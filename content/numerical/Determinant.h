@@ -3,7 +3,9 @@
  * Date: 2016-09-06
  * License: CC0
  * Source: folklore
- * Description: Calculates determinant of a matrix. Destroys the matrix.
+ * Description: Tính định thức ma trận số thực bằng khử Gauss trong $O(N^3)$.
+
+
  * Time: $O(N^3)$
  * Status: somewhat tested
  */

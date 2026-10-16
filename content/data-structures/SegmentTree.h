@@ -3,9 +3,11 @@
  * Date: 2017-10-31
  * License: CC0
  * Source: folklore
- * Description: Zero-indexed max-tree. Bounds are inclusive to the left and exclusive to the right.
- * Can be changed by modifying T, f and unit.
- * Time: O(\log N)
+ * Description: Cây phân đoạn (Segment Tree) lấy max, chỉ số từ 0. Đoạn truy vấn nửa mở [b, e). Có thể tùy biến kiểu dữ liệu T, hàm f và phần tử trung hòa unit.
+
+
+
+ * Time: $O(\log N)$
  * Status: stress-tested
  */
 #pragma once

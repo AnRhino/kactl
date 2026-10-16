@@ -3,17 +3,9 @@
  * Date: 2019-05-07
  * License: Boost Software License
  * Source: https://github.com/AlCash07/ACTL/blob/master/include/actl/geometry/algorithm/intersect/line_convex_polygon.hpp
- * Description: Line-convex polygon intersection. The polygon must be ccw and have no collinear points.
- * lineHull(line, poly) returns a pair describing the intersection of a line with the polygon:
- *  \begin{itemize*}
- *    \item $(-1, -1)$ if no collision,
- *    \item $(i, -1)$ if touching the corner $i$,
- *    \item $(i, i)$ if along side $(i, i+1)$,
- *    \item $(i, j)$ if crossing sides $(i, i+1)$ and $(j, j+1)$.
- *  \end{itemize*}
- *  In the last case, if a corner $i$ is crossed, this is treated as happening on side $(i, i+1)$.
- *  The points are returned in the same order as the line hits the polygon.
- * \texttt{extrVertex} returns the point of a hull with the max projection onto a line.
+ * Description: Tìm đoạn giao nhau giữa một đường thẳng và một đa giác lồi trong $O(\log N)$.
+
+
  * Time: O(\log n)
  * Status: stress-tested
  */

@@ -2,7 +2,9 @@
  * Author: Stanford
  * Date: Unknown
  * Source: Stanford Notebook
- * Description: KD-tree (2d, can be extended to 3d)
+ * Description: Cây k-d tìm điểm gần nhất trong không gian 2D.
+
+
  * Status: Tested on excellentengineers
  */
 #pragma once
